@@ -8,24 +8,55 @@
 
 /* Begin PBXBuildFile section */
 		14E40075214F951700E020FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40074214F951700E020FD /* AppDelegate.m */; };
-		14E40078214F951700E020FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40077214F951700E020FD /* ViewController.m */; };
-		14E4007B214F951700E020FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E40079214F951700E020FD /* Main.storyboard */; };
 		14E4007D214F951E00E020FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007C214F951E00E020FD /* Assets.xcassets */; };
 		14E40080214F951E00E020FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007E214F951E00E020FD /* LaunchScreen.storyboard */; };
 		14E40083214F951E00E020FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40082214F951E00E020FD /* main.m */; };
+		14E4008C214F98A600E020FD /* LNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4008B214F98A600E020FD /* LNBaseView.m */; };
+		14E4008F214F98BA00E020FD /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4008E214F98BA00E020FD /* LNBaseViewController.m */; };
+		14E40092214F98D900E020FD /* LNBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40091214F98D900E020FD /* LNBaseViewModel.m */; };
+		14E40098214F9E4F00E020FD /* LNNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40097214F9E4F00E020FD /* LNNavigationViewController.m */; };
+		14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A1214F9EF600E020FD /* LNRootViewController.m */; };
+		14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A5214F9F5900E020FD /* LNDemoViewModel.m */; };
+		14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A8214F9FA300E020FD /* LNDemoModel.m */; };
+		14E400AB214F9FC700E020FD /* LNDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E400AA214F9FC700E020FD /* LNDemoView.xib */; };
+		14E400AE214F9FEC00E020FD /* LNDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400AD214F9FEC00E020FD /* LNDemoView.m */; };
+		14E400B1214FB6B800E020FD /* LNTestDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400B0214FB6B800E020FD /* LNTestDemoViewController.m */; };
+		864395C9182CA23125F33F9B /* Pods_LNMVVMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F480B32DC49C3E5E35CD60D3 /* Pods_LNMVVMDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14E40070214F951700E020FD /* LNMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E40073214F951700E020FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14E40074214F951700E020FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14E40076214F951700E020FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14E40077214F951700E020FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		14E4007A214F951700E020FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14E4007C214F951E00E020FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E4007F214F951E00E020FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14E40081214F951E00E020FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E40082214F951E00E020FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14E4008A214F98A600E020FD /* LNBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseView.h; sourceTree = "<group>"; };
+		14E4008B214F98A600E020FD /* LNBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseView.m; sourceTree = "<group>"; };
+		14E4008D214F98BA00E020FD /* LNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewController.h; sourceTree = "<group>"; };
+		14E4008E214F98BA00E020FD /* LNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewController.m; sourceTree = "<group>"; };
+		14E40090214F98D900E020FD /* LNBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewModel.h; sourceTree = "<group>"; };
+		14E40091214F98D900E020FD /* LNBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewModel.m; sourceTree = "<group>"; };
+		14E40093214F98F800E020FD /* LNViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewProtocol.h; sourceTree = "<group>"; };
+		14E40094214F991000E020FD /* LNViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewControllerProtocol.h; sourceTree = "<group>"; };
+		14E40095214F992700E020FD /* LNViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewModelProtocol.h; sourceTree = "<group>"; };
+		14E40096214F9E4F00E020FD /* LNNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNNavigationViewController.h; sourceTree = "<group>"; };
+		14E40097214F9E4F00E020FD /* LNNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNNavigationViewController.m; sourceTree = "<group>"; };
+		14E400A1214F9EF600E020FD /* LNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRootViewController.m; sourceTree = "<group>"; };
+		14E400A2214F9EF600E020FD /* LNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRootViewController.h; sourceTree = "<group>"; };
+		14E400A4214F9F5900E020FD /* LNDemoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNDemoViewModel.h; sourceTree = "<group>"; };
+		14E400A5214F9F5900E020FD /* LNDemoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNDemoViewModel.m; sourceTree = "<group>"; };
+		14E400A7214F9FA300E020FD /* LNDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNDemoModel.h; sourceTree = "<group>"; };
+		14E400A8214F9FA300E020FD /* LNDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNDemoModel.m; sourceTree = "<group>"; };
+		14E400AA214F9FC700E020FD /* LNDemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LNDemoView.xib; sourceTree = "<group>"; };
+		14E400AC214F9FEC00E020FD /* LNDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNDemoView.h; sourceTree = "<group>"; };
+		14E400AD214F9FEC00E020FD /* LNDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNDemoView.m; sourceTree = "<group>"; };
+		14E400AF214FB6B800E020FD /* LNTestDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNTestDemoViewController.h; sourceTree = "<group>"; };
+		14E400B0214FB6B800E020FD /* LNTestDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTestDemoViewController.m; sourceTree = "<group>"; };
+		3E5BA85DE9044C437C3F5B8D /* Pods-LNMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNMVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNMVVMDemo/Pods-LNMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		668F443BFE970E45C1FBAB61 /* Pods-LNMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNMVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNMVVMDemo/Pods-LNMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F480B32DC49C3E5E35CD60D3 /* Pods_LNMVVMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNMVVMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864395C9182CA23125F33F9B /* Pods_LNMVVMDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +76,8 @@
 			children = (
 				14E40072214F951700E020FD /* LNMVVMDemo */,
 				14E40071214F951700E020FD /* Products */,
+				EBAA451A94C3BAB1A5E17A78 /* Pods */,
+				5B0E8E5C76E08CBF67F136B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +92,101 @@
 		14E40072214F951700E020FD /* LNMVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				14E4009C214F9EF600E020FD /* Demo */,
+				14E40089214F957E00E020FD /* LNBase */,
 				14E40073214F951700E020FD /* AppDelegate.h */,
 				14E40074214F951700E020FD /* AppDelegate.m */,
-				14E40076214F951700E020FD /* ViewController.h */,
-				14E40077214F951700E020FD /* ViewController.m */,
-				14E40079214F951700E020FD /* Main.storyboard */,
 				14E4007C214F951E00E020FD /* Assets.xcassets */,
 				14E4007E214F951E00E020FD /* LaunchScreen.storyboard */,
 				14E40081214F951E00E020FD /* Info.plist */,
 				14E40082214F951E00E020FD /* main.m */,
 			);
 			path = LNMVVMDemo;
+			sourceTree = "<group>";
+		};
+		14E40089214F957E00E020FD /* LNBase */ = {
+			isa = PBXGroup;
+			children = (
+				14E4008A214F98A600E020FD /* LNBaseView.h */,
+				14E4008B214F98A600E020FD /* LNBaseView.m */,
+				14E40093214F98F800E020FD /* LNViewProtocol.h */,
+				14E4008D214F98BA00E020FD /* LNBaseViewController.h */,
+				14E4008E214F98BA00E020FD /* LNBaseViewController.m */,
+				14E40094214F991000E020FD /* LNViewControllerProtocol.h */,
+				14E40090214F98D900E020FD /* LNBaseViewModel.h */,
+				14E40091214F98D900E020FD /* LNBaseViewModel.m */,
+				14E40095214F992700E020FD /* LNViewModelProtocol.h */,
+				14E40096214F9E4F00E020FD /* LNNavigationViewController.h */,
+				14E40097214F9E4F00E020FD /* LNNavigationViewController.m */,
+			);
+			path = LNBase;
+			sourceTree = "<group>";
+		};
+		14E4009C214F9EF600E020FD /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				14E4009D214F9EF600E020FD /* viewModel */,
+				14E4009E214F9EF600E020FD /* model */,
+				14E4009F214F9EF600E020FD /* view */,
+				14E400A0214F9EF600E020FD /* viewController */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		14E4009D214F9EF600E020FD /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14E400A4214F9F5900E020FD /* LNDemoViewModel.h */,
+				14E400A5214F9F5900E020FD /* LNDemoViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		14E4009E214F9EF600E020FD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				14E400A7214F9FA300E020FD /* LNDemoModel.h */,
+				14E400A8214F9FA300E020FD /* LNDemoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		14E4009F214F9EF600E020FD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				14E400AC214F9FEC00E020FD /* LNDemoView.h */,
+				14E400AD214F9FEC00E020FD /* LNDemoView.m */,
+				14E400AA214F9FC700E020FD /* LNDemoView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		14E400A0214F9EF600E020FD /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				14E400A2214F9EF600E020FD /* LNRootViewController.h */,
+				14E400A1214F9EF600E020FD /* LNRootViewController.m */,
+				14E400AF214FB6B800E020FD /* LNTestDemoViewController.h */,
+				14E400B0214FB6B800E020FD /* LNTestDemoViewController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		5B0E8E5C76E08CBF67F136B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F480B32DC49C3E5E35CD60D3 /* Pods_LNMVVMDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBAA451A94C3BAB1A5E17A78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E5BA85DE9044C437C3F5B8D /* Pods-LNMVVMDemo.debug.xcconfig */,
+				668F443BFE970E45C1FBAB61 /* Pods-LNMVVMDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14E40086214F951E00E020FD /* Build configuration list for PBXNativeTarget "LNMVVMDemo" */;
 			buildPhases = (
+				5E07A03F23614647EEC26E50 /* [CP] Check Pods Manifest.lock */,
 				14E4006C214F951700E020FD /* Sources */,
 				14E4006D214F951700E020FD /* Frameworks */,
 				14E4006E214F951700E020FD /* Resources */,
+				506493ED49007D3A17FDA755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +217,7 @@
 		14E40068214F951700E020FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LN;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Mr.lai;
 				TargetAttributes = {
@@ -129,35 +250,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E40080214F951E00E020FD /* LaunchScreen.storyboard in Resources */,
+				14E400AB214F9FC700E020FD /* LNDemoView.xib in Resources */,
 				14E4007D214F951E00E020FD /* Assets.xcassets in Resources */,
-				14E4007B214F951700E020FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		506493ED49007D3A17FDA755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LNMVVMDemo/Pods-LNMVVMDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNMVVMDemo/Pods-LNMVVMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E07A03F23614647EEC26E50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LNMVVMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14E4006C214F951700E020FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E40078214F951700E020FD /* ViewController.m in Sources */,
+				14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */,
+				14E4008C214F98A600E020FD /* LNBaseView.m in Sources */,
+				14E4008F214F98BA00E020FD /* LNBaseViewController.m in Sources */,
+				14E40098214F9E4F00E020FD /* LNNavigationViewController.m in Sources */,
 				14E40083214F951E00E020FD /* main.m in Sources */,
+				14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */,
+				14E40092214F98D900E020FD /* LNBaseViewModel.m in Sources */,
 				14E40075214F951700E020FD /* AppDelegate.m in Sources */,
+				14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */,
+				14E400AE214F9FEC00E020FD /* LNDemoView.m in Sources */,
+				14E400B1214FB6B800E020FD /* LNTestDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14E40079214F951700E020FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14E4007A214F951700E020FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14E4007E214F951E00E020FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,10 +453,12 @@
 		};
 		14E40087214F951E00E020FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5BA85DE9044C437C3F5B8D /* Pods-LNMVVMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LNMVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +471,12 @@
 		};
 		14E40088214F951E00E020FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668F443BFE970E45C1FBAB61 /* Pods-LNMVVMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LNMVVMDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

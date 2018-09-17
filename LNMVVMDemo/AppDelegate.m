@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LNNavigationViewController.h"
+#import "LNRootViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height)];
+    
+    self.window.rootViewController = [[LNNavigationViewController alloc] initWithRootViewController:[LNRootViewController new]];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

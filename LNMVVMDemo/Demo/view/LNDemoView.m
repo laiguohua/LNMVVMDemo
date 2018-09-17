@@ -7,15 +7,31 @@
 //
 
 #import "LNDemoView.h"
+#import <ReactiveObjC/ReactiveObjC.h>
+
+#import "LNDemoViewModel.h"
+
+@interface LNDemoView()
+
+@property (nonatomic,strong)LNDemoViewModel *viewModel;
+
+@end
 
 @implementation LNDemoView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)dealloc{
+    NSLog(@"%s",__func__);
 }
-*/
+- (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewModel{
+    self.viewModel = (LNDemoViewModel *)viewModel;
+    //UI与数据绑定
+    RAC(self.titleLabel,text) = RACObserve(self.viewModel.detailModel,title);
+    RAC(self.detailLabel,text) = RACObserve(self.viewModel.detailModel,detailStr);
+    RAC(self.aswitch,on) = RACObserve(self.viewModel.detailModel,isChoose);
+    
+}
+
+- (IBAction)switchAction:(UISwitch *)sender {
+    [self ln_safeViewActionBlock:sender infor:nil];
+}
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LNViewControllerProtocol.h"
 
-@interface LNBaseViewController : UIViewController
+@interface LNBaseViewController : UIViewController<LNViewControllerProtocol>
 
 @end

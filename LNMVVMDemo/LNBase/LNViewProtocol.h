@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol LNViewModelProtocol;
+
 @protocol LNViewProtocol <NSObject>
+
+//交互事件
+@property (nonatomic, copy)void (^ln_ActionBlock)(UIControl *actionControl,id infor);
+
+@optional
++ (id)ln_loadFromXib;
+- (void)ln_setUpSubViews;
+- (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewModel;
+- (void)ln_safeViewActionBlock:(UIControl *)actionControl infor:(id)infor;
 
 @end

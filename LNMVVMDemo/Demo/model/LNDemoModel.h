@@ -10,4 +10,8 @@
 
 @interface LNDemoModel : NSObject
 
+@property (nonatomic,copy)NSString *title;
+@property (nonatomic,copy)NSString *detailStr;
+@property (nonatomic,assign)BOOL isChoose;
+
 @end

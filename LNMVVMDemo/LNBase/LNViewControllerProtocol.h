@@ -10,4 +10,12 @@
 
 @protocol LNViewControllerProtocol <NSObject>
 
+@optional
+- (void)ln_bindViewModel;
+- (void)ln_addSubviews;
+//设置导航
+- (void)ln_layoutNavigation;
+//数据请求
+- (void)ln_getNewData;
+
 @end

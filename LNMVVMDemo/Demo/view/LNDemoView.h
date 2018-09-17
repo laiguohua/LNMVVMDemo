@@ -9,5 +9,8 @@
 #import "LNBaseView.h"
 
 @interface LNDemoView : LNBaseView
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *aswitch;
 
 @end

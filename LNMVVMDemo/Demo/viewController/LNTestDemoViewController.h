@@ -1,5 +1,5 @@
 //
-//  LNDemoViewController.h
+//  LNTestDemoViewController.h
 //  LNMVVMDemo
 //
 //  Created by Mr.lai on 2018/9/17.
@@ -8,6 +8,6 @@
 
 #import "LNBaseViewController.h"
 
-@interface LNDemoViewController : LNBaseViewController
+@interface LNTestDemoViewController : LNBaseViewController
 
 @end

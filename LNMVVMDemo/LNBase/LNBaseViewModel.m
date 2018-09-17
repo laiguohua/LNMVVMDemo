@@ -10,4 +10,18 @@
 
 @implementation LNBaseViewModel
 
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    
+    LNBaseViewModel *viewModel = [super allocWithZone:zone];
+    
+    if (viewModel) {
+        
+        [viewModel ln_initialize];
+    }
+    return viewModel;
+}
+
+
+- (void)ln_initialize{};
+
 @end

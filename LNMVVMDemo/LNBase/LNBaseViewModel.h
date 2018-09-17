@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LNViewModelProtocol.h"
 
-@interface LNBaseViewModel : NSObject
+@interface LNBaseViewModel : NSObject<LNViewModelProtocol>
 
 @end

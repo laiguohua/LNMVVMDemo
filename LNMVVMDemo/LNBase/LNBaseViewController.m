@@ -7,6 +7,7 @@
 //
 
 #import "LNBaseViewController.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface LNBaseViewController ()
 
@@ -14,10 +15,57 @@
 
 @implementation LNBaseViewController
 
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    
+    LNBaseViewController *viewController = [super allocWithZone:zone];
+    
+    @weakify(viewController)
+    
+    [[viewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(id x) {
+        
+        @strongify(viewController)
+        [viewController ln_addSubviews];
+        [viewController ln_bindViewModel];
+    }];
+    
+    [[viewController rac_signalForSelector:@selector(viewWillAppear:)] subscribeNext:^(id x) {
+        
+        @strongify(viewController)
+        [viewController ln_layoutNavigation];
+        [viewController ln_getNewData];
+    }];
+    
+    return viewController;
+}
+
+- (instancetype)initWithViewModel:(id<LNViewControllerProtocol>)viewModel {
+    
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
+
+#pragma mark - 代理
+- (void)ln_bindViewModel{};
+
+- (void)ln_addSubviews{};
+
+- (void)ln_layoutNavigation{
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    
+};
+
+- (void)ln_getNewData{};
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

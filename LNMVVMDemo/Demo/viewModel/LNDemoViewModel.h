@@ -7,7 +7,12 @@
 //
 
 #import "LNBaseViewModel.h"
+#import "LNDemoModel.h"
 
 @interface LNDemoViewModel : LNBaseViewModel
+
+@property (nonatomic,strong)LNDemoModel *detailModel;
+
+- (void)chageDetail;
 
 @end

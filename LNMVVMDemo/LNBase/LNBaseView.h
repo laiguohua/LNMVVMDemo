@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LNViewProtocol.h"
 
-@interface LNBaseView : UIView
+@interface LNBaseView : UIView<LNViewProtocol>
+
+@property (nonatomic, copy)void (^ln_ActionBlock)(UIControl *actionControl,id infor);
 
 @end

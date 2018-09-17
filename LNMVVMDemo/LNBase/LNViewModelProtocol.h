@@ -10,4 +10,7 @@
 
 @protocol LNViewModelProtocol <NSObject>
 
+@optional
+- (void)ln_initialize;
+
 @end
