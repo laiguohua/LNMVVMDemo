@@ -25,16 +25,16 @@
 
 - (void)ln_setUpSubViews {}
 
-- (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewMode{};
+- (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewMode{}
 
-- (void)ln_safeViewActionBlock:(UIControl *)actionControl infor:(id)infor{
+- (void)ln_safeActionBlock:(UIControl *)actionControl infor:(id)infor{
     if(self.ln_ActionBlock){
         self.ln_ActionBlock(actionControl, infor);
     }
 }
 
 + (id)ln_loadFromXib{
-    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:self options:nil][0];
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:self options:nil] firstObject];
 }
 
 @end

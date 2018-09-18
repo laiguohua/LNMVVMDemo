@@ -11,8 +11,11 @@
 @protocol LNViewControllerProtocol <NSObject>
 
 @optional
+//以下两个在viewDidLoad里会调用
 - (void)ln_bindViewModel;
 - (void)ln_addSubviews;
+
+//以下两个在viewWillAppear会调用
 //设置导航
 - (void)ln_layoutNavigation;
 //数据请求

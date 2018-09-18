@@ -13,6 +13,8 @@
 
 @property (nonatomic,strong)LNDemoModel *detailModel;
 
+@property (nonatomic,assign)BOOL isHiddenSwitch;
+
 - (void)chageDetail;
 
 @end

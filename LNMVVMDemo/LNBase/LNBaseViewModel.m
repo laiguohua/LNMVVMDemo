@@ -22,6 +22,6 @@
 }
 
 
-- (void)ln_initialize{};
+- (void)ln_initialize{}
 
 @end

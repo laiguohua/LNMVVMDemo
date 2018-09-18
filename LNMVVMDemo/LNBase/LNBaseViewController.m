@@ -38,14 +38,6 @@
     return viewController;
 }
 
-- (instancetype)initWithViewModel:(id<LNViewControllerProtocol>)viewModel {
-    
-    self = [super init];
-    if (self) {
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -54,18 +46,18 @@
 }
 
 #pragma mark - 代理
-- (void)ln_bindViewModel{};
+- (void)ln_bindViewModel{}
 
-- (void)ln_addSubviews{};
+- (void)ln_addSubviews{}
 
 - (void)ln_layoutNavigation{
     
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
     
-};
+}
 
-- (void)ln_getNewData{};
+- (void)ln_getNewData{}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

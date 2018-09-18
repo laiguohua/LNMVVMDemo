@@ -12,13 +12,13 @@
 
 @protocol LNViewProtocol <NSObject>
 
-//交互事件
+//交互事件,view里面的交互事件通过这个传出去
 @property (nonatomic, copy)void (^ln_ActionBlock)(UIControl *actionControl,id infor);
 
 @optional
 + (id)ln_loadFromXib;
 - (void)ln_setUpSubViews;
 - (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewModel;
-- (void)ln_safeViewActionBlock:(UIControl *)actionControl infor:(id)infor;
+- (void)ln_safeActionBlock:(UIControl *)actionControl infor:(id)infor;
 
 @end

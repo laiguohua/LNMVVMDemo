@@ -26,12 +26,12 @@
     //UI与数据绑定
     RAC(self.titleLabel,text) = RACObserve(self.viewModel.detailModel,title);
     RAC(self.detailLabel,text) = RACObserve(self.viewModel.detailModel,detailStr);
-    RAC(self.aswitch,on) = RACObserve(self.viewModel.detailModel,isChoose);
-    
+    RAC(self.aswitch,on) = [RACObserve(self.viewModel.detailModel,isChoose) ignore:nil];
+    RAC(self.aswitch,hidden) = RACObserve(self.viewModel,isHiddenSwitch);
 }
 
 - (IBAction)switchAction:(UISwitch *)sender {
-    [self ln_safeViewActionBlock:sender infor:nil];
+    [self ln_safeActionBlock:sender infor:nil];
 }
 
 @end

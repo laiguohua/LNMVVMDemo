@@ -48,11 +48,6 @@
 }
 - (void)ln_bindViewModel{
     [self.demoView ln_bindViewModel:self.viewModel];
-    @weakify(self);
-    self.demoView.ln_ActionBlock = ^(UIControl *actionControl, id infor) {
-        @strongify(self);
-        [self.viewModel chageDetail];
-    };
 }
 
 - (void)demoAction{
@@ -71,6 +66,7 @@
 - (LNDemoViewModel *)viewModel{
     if(!_viewModel){
         _viewModel = [LNDemoViewModel new];
+        _viewModel.isHiddenSwitch = YES;
     }
     return _viewModel;
 }
