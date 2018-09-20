@@ -30,6 +30,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"DEMO";
+    
 }
 
 - (void)ln_addSubviews{
@@ -43,7 +44,7 @@
 - (void)ln_bindViewModel{
     [self.demoView ln_bindViewModel:self.viewModel];
     @weakify(self);
-    self.demoView.ln_ActionBlock = ^(UIControl *actionControl, id infor) {
+    self.demoView.ln_ActionBlock = ^(id sender, id infor) {
         @strongify(self);
         [self.viewModel chageDetail];
     };

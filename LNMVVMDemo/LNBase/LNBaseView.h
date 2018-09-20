@@ -11,6 +11,6 @@
 
 @interface LNBaseView : UIView<LNViewProtocol>
 
-@property (nonatomic, copy)void (^ln_ActionBlock)(UIControl *actionControl,id infor);
+@property (nonatomic, copy)void (^ln_ActionBlock)(id sender,id infor);
 
 @end

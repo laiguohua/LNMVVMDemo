@@ -25,6 +25,7 @@
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backAction)];
         backItem.tintColor = [UIColor blackColor];
         viewController.navigationItem.leftBarButtonItem = backItem;
+        viewController.hidesBottomBarWhenPushed = YES;
     }
     [super pushViewController:viewController animated:animated];
 }

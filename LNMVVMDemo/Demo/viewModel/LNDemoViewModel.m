@@ -21,8 +21,8 @@
 }
 
 - (void)chageDetail{
-//    模拟网络请求
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//    模拟网络请求,延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.detailModel.isChoose = !self.detailModel.isChoose;
         if(self.detailModel.isChoose){
             self.detailModel.title = @"这是另外一个标题";

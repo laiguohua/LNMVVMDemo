@@ -27,9 +27,9 @@
 
 - (void)ln_bindViewModel:(id<LNViewModelProtocol>)viewMode{}
 
-- (void)ln_safeActionBlock:(UIControl *)actionControl infor:(id)infor{
+- (void)ln_safeActionBlock:(id)sender infor:(id)infor{
     if(self.ln_ActionBlock){
-        self.ln_ActionBlock(actionControl, infor);
+        self.ln_ActionBlock(sender, infor);
     }
 }
 
