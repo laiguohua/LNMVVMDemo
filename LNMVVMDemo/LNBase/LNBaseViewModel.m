@@ -10,18 +10,36 @@
 
 @implementation LNBaseViewModel
 
-+ (instancetype)allocWithZone:(struct _NSZone *)zone {
-    
-    LNBaseViewModel *viewModel = [super allocWithZone:zone];
-    
-    if (viewModel) {
-        
-        [viewModel ln_initialize];
-    }
-    return viewModel;
+@synthesize netRequest = _netRequest;
+
+- (void)dealloc{
+    NSLog(@"%s",__func__);
 }
 
+- (id)init{
+    self = [super init];
+    if(self){
+        [self ln_initialize];
+    }
+    return self;
+}
 
 - (void)ln_initialize{}
+
+- (NSMutableArray *)dataSoure{
+    if(!_dataSoure){
+        _dataSoure = [NSMutableArray array];
+    }
+    return _dataSoure;
+}
+
+//请求对象
+- (LNRequest *)netRequest{
+    if(!_netRequest){
+        _netRequest = [LNRequest new];
+        _netRequest.resultBlock = self.resultBlock;
+    }
+    return _netRequest;
+}
 
 @end

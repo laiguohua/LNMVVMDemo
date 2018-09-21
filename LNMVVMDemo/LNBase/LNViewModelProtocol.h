@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class LNRequest;
+
 @protocol LNViewModelProtocol <NSObject>
+//网络请求对象
+@property (nonatomic,strong)LNRequest *netRequest;
 
 @optional
 - (void)ln_initialize;

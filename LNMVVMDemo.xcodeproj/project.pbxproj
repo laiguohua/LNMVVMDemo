@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142BE0592154BD1100418AE9 /* LNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0582154BD1100418AE9 /* LNRequest.m */; };
+		142BE0642154BDE700418AE9 /* LNParserMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE05A2154BDE500418AE9 /* LNParserMarker.m */; };
+		142BE0652154BDE700418AE9 /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE05D2154BDE500418AE9 /* MBManager.m */; };
+		142BE0662154BDE700418AE9 /* NSObject+parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0612154BDE600418AE9 /* NSObject+parser.m */; };
+		142BE0672154BDE700418AE9 /* LNMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */; };
+		142BE0682154BDE700418AE9 /* NSString+LKCalauteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */; };
+		142BE06D2154BE9E00418AE9 /* LNHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE06B2154BE9E00418AE9 /* LNHttpManager.m */; };
+		142BE06E2154BE9E00418AE9 /* LNHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */; };
+		142BE0712154C06600418AE9 /* LNBaseParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0702154C06600418AE9 /* LNBaseParseManager.m */; };
 		14E40075214F951700E020FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40074214F951700E020FD /* AppDelegate.m */; };
 		14E4007D214F951E00E020FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007C214F951E00E020FD /* Assets.xcassets */; };
 		14E40080214F951E00E020FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007E214F951E00E020FD /* LaunchScreen.storyboard */; };
@@ -25,6 +34,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142BE0572154BD1000418AE9 /* LNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRequest.h; sourceTree = "<group>"; };
+		142BE0582154BD1100418AE9 /* LNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRequest.m; sourceTree = "<group>"; };
+		142BE05A2154BDE500418AE9 /* LNParserMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNParserMarker.m; sourceTree = "<group>"; };
+		142BE05B2154BDE500418AE9 /* NSString+LKCalauteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LKCalauteSize.h"; sourceTree = "<group>"; };
+		142BE05C2154BDE500418AE9 /* LNMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNMBProgressHUD.h; sourceTree = "<group>"; };
+		142BE05D2154BDE500418AE9 /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
+		142BE05E2154BDE500418AE9 /* MBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBManager.h; sourceTree = "<group>"; };
+		142BE05F2154BDE600418AE9 /* LNParserMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNParserMarker.h; sourceTree = "<group>"; };
+		142BE0602154BDE600418AE9 /* NSObject+parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+parser.h"; sourceTree = "<group>"; };
+		142BE0612154BDE600418AE9 /* NSObject+parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+parser.m"; sourceTree = "<group>"; };
+		142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNMBProgressHUD.m; sourceTree = "<group>"; };
+		142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LKCalauteSize.m"; sourceTree = "<group>"; };
+		142BE0692154BE9D00418AE9 /* LNHttpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpConfig.h; sourceTree = "<group>"; };
+		142BE06A2154BE9E00418AE9 /* LNHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpManager.h; sourceTree = "<group>"; };
+		142BE06B2154BE9E00418AE9 /* LNHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpManager.m; sourceTree = "<group>"; };
+		142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpConfig.m; sourceTree = "<group>"; };
+		142BE06F2154C06500418AE9 /* LNBaseParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseParseManager.h; sourceTree = "<group>"; };
+		142BE0702154C06600418AE9 /* LNBaseParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseParseManager.m; sourceTree = "<group>"; };
 		14E40070214F951700E020FD /* LNMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E40073214F951700E020FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14E40074214F951700E020FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +134,24 @@
 		14E40089214F957E00E020FD /* LNBase */ = {
 			isa = PBXGroup;
 			children = (
+				142BE06F2154C06500418AE9 /* LNBaseParseManager.h */,
+				142BE0702154C06600418AE9 /* LNBaseParseManager.m */,
+				142BE0692154BE9D00418AE9 /* LNHttpConfig.h */,
+				142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */,
+				142BE06A2154BE9E00418AE9 /* LNHttpManager.h */,
+				142BE06B2154BE9E00418AE9 /* LNHttpManager.m */,
+				142BE05C2154BDE500418AE9 /* LNMBProgressHUD.h */,
+				142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */,
+				142BE05F2154BDE600418AE9 /* LNParserMarker.h */,
+				142BE05A2154BDE500418AE9 /* LNParserMarker.m */,
+				142BE05E2154BDE500418AE9 /* MBManager.h */,
+				142BE05D2154BDE500418AE9 /* MBManager.m */,
+				142BE0602154BDE600418AE9 /* NSObject+parser.h */,
+				142BE0612154BDE600418AE9 /* NSObject+parser.m */,
+				142BE05B2154BDE500418AE9 /* NSString+LKCalauteSize.h */,
+				142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */,
+				142BE0572154BD1000418AE9 /* LNRequest.h */,
+				142BE0582154BD1100418AE9 /* LNRequest.m */,
 				14E4008A214F98A600E020FD /* LNBaseView.h */,
 				14E4008B214F98A600E020FD /* LNBaseView.m */,
 				14E40093214F98F800E020FD /* LNViewProtocol.h */,
@@ -313,17 +358,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BE06E2154BE9E00418AE9 /* LNHttpConfig.m in Sources */,
+				142BE0652154BDE700418AE9 /* MBManager.m in Sources */,
 				14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */,
+				142BE0642154BDE700418AE9 /* LNParserMarker.m in Sources */,
 				14E4008C214F98A600E020FD /* LNBaseView.m in Sources */,
+				142BE0662154BDE700418AE9 /* NSObject+parser.m in Sources */,
+				142BE0682154BDE700418AE9 /* NSString+LKCalauteSize.m in Sources */,
 				14E4008F214F98BA00E020FD /* LNBaseViewController.m in Sources */,
 				14E40098214F9E4F00E020FD /* LNNavigationViewController.m in Sources */,
 				14E40083214F951E00E020FD /* main.m in Sources */,
 				14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */,
 				14E40092214F98D900E020FD /* LNBaseViewModel.m in Sources */,
 				14E40075214F951700E020FD /* AppDelegate.m in Sources */,
+				142BE0672154BDE700418AE9 /* LNMBProgressHUD.m in Sources */,
+				142BE06D2154BE9E00418AE9 /* LNHttpManager.m in Sources */,
 				14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */,
+				142BE0592154BD1100418AE9 /* LNRequest.m in Sources */,
 				14E400AE214F9FEC00E020FD /* LNDemoView.m in Sources */,
 				14E400B1214FB6B800E020FD /* LNTestDemoViewController.m in Sources */,
+				142BE0712154C06600418AE9 /* LNBaseParseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

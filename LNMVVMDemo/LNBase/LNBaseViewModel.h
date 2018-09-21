@@ -8,7 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "LNViewModelProtocol.h"
+#import "LNRequest.h"
 
 @interface LNBaseViewModel : NSObject<LNViewModelProtocol>
+//数据源
+@property (nonatomic,strong)NSMutableArray *dataSoure;
+
+//请求回调
+@property (nonatomic,copy)requestResultBlock resultBlock;
+
+@property (nonatomic,copy)void(^requestStatusBlock)(BOOL isRunning);
+
+//网络请求
+@property (nonatomic,strong)LNRequest *netRequest;
 
 @end
