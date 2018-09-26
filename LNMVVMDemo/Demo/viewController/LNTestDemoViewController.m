@@ -47,8 +47,13 @@
 - (void)ln_bindViewModel{
 //    LNTabelDemoDelegateModel 里不用实现任何东西，就可实现tableView的代理,基类已经实现
     @weakify(self);
-    self.delegateModel = [[LNTabelDemoDelegateModel alloc] initWithDataArr:self.viewModel.dataSoure tableView:self.tableView cellClassNames:@[@"LNTableDemoCell"] useAutomaticDimension:NO cellDidSelectedBlock:^(NSIndexPath *indexPath, id cellModel) {
+    self.delegateModel = [[LNTabelDemoDelegateModel alloc] initWithDataArr:self.viewModel.dataSoure tableView:self.tableView cellClassNames:@[@"LNTableDemoCell"] useAutomaticDimension:NO cellDidSelectedBlock:^(NSIndexPath *indexPath, LNDemoModel *cellModel) {
         //cell点击事件,传出相应的下标和对应的模型
+        cellModel.isChoose = !cellModel.isChoose;
+        @strongify(self);
+        [self.tableView beginUpdates];
+        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        [self.tableView endUpdates];
     }];
     
     [self.viewModel loadLocalTableDemoData:^{

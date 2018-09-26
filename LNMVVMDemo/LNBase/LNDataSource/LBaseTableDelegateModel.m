@@ -1,6 +1,6 @@
 //
 //  LBaseTableDelegateModel.m
-//  AlertDemo
+//  LNMVVMDemo
 //
 //  Created by lgh on 2017/9/28.
 //  Copyright © 2017年 lgh. All rights reserved.
