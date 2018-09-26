@@ -11,6 +11,8 @@
 @implementation LNBaseViewModel
 
 @synthesize netRequest = _netRequest;
+@synthesize resultBlock = _resultBlock;
+@synthesize requestStatusBlock = _requestStatusBlock;
 
 - (void)dealloc{
     NSLog(@"%s",__func__);
@@ -37,7 +39,7 @@
 - (LNRequest *)netRequest{
     if(!_netRequest){
         _netRequest = [LNRequest new];
-        _netRequest.resultBlock = self.resultBlock;
+        _netRequest.requestDelegate = self;
     }
     return _netRequest;
 }

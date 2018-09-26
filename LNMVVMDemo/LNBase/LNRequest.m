@@ -34,6 +34,9 @@
     if(self.lastHttpConfig){
         RACCommand *command = [self lk_baseRequestCommond];
         [command execute:self.lastHttpConfig];
+        if(self.requestDelegate.requestStatusBlock){
+            self.requestDelegate.requestStatusBlock(YES, self.lastHttpConfig.apiFlag);
+        }
         return command;
     }
     return nil;
@@ -98,16 +101,26 @@
     
     [command.executionSignals.switchToLatest subscribeNext:^(id result) {
         RACTupleUnpack(id data,LNHttpConfig *config) = result;
-        if(self.resultBlock){
-            self.resultBlock(YES, config.apiFlag, 0, data,config.orginData, [config.orginData valueForKey:[LNBaseParseManager shareManager].errorMessageKey]);
+        if(self.requestDelegate.resultBlock){
+            self.requestDelegate.resultBlock(YES, config.apiFlag, 0, data,config.orginData, [config.orginData valueForKey:[LNBaseParseManager shareManager].errorMessageKey]);
+        }else if(self.requestDelegate && [self.requestDelegate respondsToSelector:@selector(requestCompleWithSuccess:apiFlag:code:data:orginData:message:)]){
+            [self.requestDelegate requestCompleWithSuccess:YES apiFlag:config.apiFlag code:0 data:data orginData:config.orginData message:[config.orginData valueForKey:[LNBaseParseManager shareManager].errorMessageKey]];
+        }
+        if(self.requestDelegate.requestStatusBlock){
+            self.requestDelegate.requestStatusBlock(NO, config.apiFlag);
         }
         
     }];
     
     [command.errors subscribeNext:^(NSError *error) {
         LNHttpConfig *config = error.userInfo[@"httpConfig"];
-        if(self.resultBlock){
-            self.resultBlock(NO, config.apiFlag, error.code, nil,config.orginData, error.userInfo[@"errmsg"]);
+        if(self.requestDelegate.resultBlock){
+            self.requestDelegate.resultBlock(NO, config.apiFlag, error.code, nil,config.orginData, error.userInfo[@"errmsg"]);
+        }else if(self.requestDelegate && [self.requestDelegate respondsToSelector:@selector(requestCompleWithSuccess:apiFlag:code:data:orginData:message:)]){
+            [self.requestDelegate requestCompleWithSuccess:NO apiFlag:config.apiFlag code:error.code data:nil orginData:config.orginData message:error.userInfo[@"errmsg"]];
+        }
+        if(self.requestDelegate.requestStatusBlock){
+            self.requestDelegate.requestStatusBlock(NO, config.apiFlag);
         }
         if(config.errorShowMessage){
             [MBManager showHUDWithMessage:error.userInfo[@"errmsg"]];

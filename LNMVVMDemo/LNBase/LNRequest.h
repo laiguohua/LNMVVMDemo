@@ -9,16 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "LNHttpConfig.h"
-
-//网络请求结果的回调,外部关心这个结果即可，或者子类对这个回调再次封装
-typedef void(^requestResultBlock)(BOOL success,NSInteger apiFlag,NSInteger code ,id data ,id orginData,NSString *message);
+#import "LNRequestProtocol.h"
 
 @interface LNRequest : NSObject
 
 @property (nonatomic,strong,readonly)LNHttpConfig *lastHttpConfig;
 
-//请求回调
-@property (nonatomic,copy)requestResultBlock resultBlock;
+@property (nonatomic,weak)id<LNRequestProtocol>requestDelegate;
+
 
 //开启一个请求,对于开启一个接口，关注的应该是这个请求的配置，中间请求过程和结果处理无需关心，因为配置已经决定了请求和结果处理
 - (RACCommand *)startHttpWithRequestConfig:(LNHttpConfig *)model;

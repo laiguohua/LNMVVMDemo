@@ -52,6 +52,7 @@
 		142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpConfig.m; sourceTree = "<group>"; };
 		142BE06F2154C06500418AE9 /* LNBaseParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseParseManager.h; sourceTree = "<group>"; };
 		142BE0702154C06600418AE9 /* LNBaseParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseParseManager.m; sourceTree = "<group>"; };
+		144CB3F6215B306F002950FA /* LNRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRequestProtocol.h; sourceTree = "<group>"; };
 		14E40070214F951700E020FD /* LNMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E40073214F951700E020FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14E40074214F951700E020FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 				142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */,
 				142BE0572154BD1000418AE9 /* LNRequest.h */,
 				142BE0582154BD1100418AE9 /* LNRequest.m */,
+				144CB3F6215B306F002950FA /* LNRequestProtocol.h */,
 				14E4008A214F98A600E020FD /* LNBaseView.h */,
 				14E4008B214F98A600E020FD /* LNBaseView.m */,
 				14E40093214F98F800E020FD /* LNViewProtocol.h */,

@@ -82,7 +82,7 @@
         }
     }];
     if(ahudType != HUD_notShow){
-        [MBManager showQCHUD];
+        [MBManager showHUD];
         [self.lock lock];
         [self.signDic setObject:@(ahudType) forKey:@(atask.taskIdentifier)];
         [self.lock unlock];
@@ -115,7 +115,7 @@
         }
     }];
     if(ahudType != HUD_notShow){
-        [MBManager showQCHUD];
+        [MBManager showHUD];
         [self.lock lock];
         [self.signDic setObject:@(ahudType) forKey:@(atask.taskIdentifier)];
         [self.lock unlock];
