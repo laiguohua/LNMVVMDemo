@@ -17,4 +17,6 @@
 
 - (void)chageDetail;
 
+- (void)loadLocalTableDemoData:(void(^)(void))compleBlock;
+
 @end

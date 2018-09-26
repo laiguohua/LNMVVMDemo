@@ -22,6 +22,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
   - AFNetworking
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveObjC
   - SDWebImage
+  - "UITableView+FDTemplateLayoutCell"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -41,6 +43,7 @@ SPEC REPOS:
     - MJRefresh
     - ReactiveObjC
     - SDWebImage
+    - "UITableView+FDTemplateLayoutCell"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -50,7 +53,8 @@ SPEC CHECKSUMS:
   MJRefresh: 0efa19656679d70a0f47cbe76e56c2271fe53a97
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 658cfa877c3c959b9ed56b984e738c020d26004e
+PODFILE CHECKSUM: 80034b3cbd8ee1492a2b9e6c2b752cdeb13e9d7d
 
 COCOAPODS: 1.5.3

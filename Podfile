@@ -11,5 +11,6 @@ pod 'MBProgressHUD'
 pod 'SDWebImage'  
 pod 'MJExtension'
 pod 'MJRefresh'
+pod 'UITableView+FDTemplateLayoutCell'
 
 end

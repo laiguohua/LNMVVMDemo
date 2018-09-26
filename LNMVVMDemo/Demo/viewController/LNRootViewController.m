@@ -32,7 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"MAIN";
+    self.title = @"MVVM";
 }
 
 - (void)ln_addSubviews{
@@ -41,13 +41,18 @@
     [_demoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    UIBarButtonItem *demoItem = [[UIBarButtonItem alloc] initWithTitle:@"Demo" style:UIBarButtonItemStylePlain target:self action:@selector(demoAction)];
+    UIBarButtonItem *demoItem = [[UIBarButtonItem alloc] initWithTitle:@"TableViewDemo" style:UIBarButtonItemStylePlain target:self action:@selector(demoAction)];
     demoItem.tintColor = [UIColor blackColor];
     self.navigationItem.rightBarButtonItem = demoItem;
     
 }
 - (void)ln_bindViewModel{
     [self.demoView ln_bindViewModel:self.viewModel];
+    @weakify(self);
+    self.demoView.ln_ActionBlock = ^(id sender, id infor) {
+        @strongify(self);
+        [self.viewModel chageDetail];
+    };
 }
 
 - (void)demoAction{
@@ -66,7 +71,6 @@
 - (LNDemoViewModel *)viewModel{
     if(!_viewModel){
         _viewModel = [LNDemoViewModel new];
-        _viewModel.isHiddenSwitch = YES;
     }
     return _viewModel;
 }

@@ -7,15 +7,18 @@
 //
 
 #import "LNTestDemoViewController.h"
-#import "LNDemoView.h"
-#import "LNDemoViewModel.h"
+
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 
+#import "LNDemoViewModel.h"
+#import "LNTabelDemoDelegateModel.h"
+
 @interface LNTestDemoViewController ()
 
-@property (nonatomic,strong)LNDemoView *demoView;
+@property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)LNDemoViewModel *viewModel;
+@property (nonatomic,strong)LNTabelDemoDelegateModel *delegateModel;
 
 @end
 
@@ -29,34 +32,39 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"DEMO";
+    self.title = @"TableViewDemo";
     
 }
 
 - (void)ln_addSubviews{
     
-    [self.view addSubview:self.demoView];
-    [_demoView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.view addSubview:self.tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     
 }
 - (void)ln_bindViewModel{
-    [self.demoView ln_bindViewModel:self.viewModel];
+//    LNTabelDemoDelegateModel 里不用实现任何东西，就可实现tableView的代理,基类已经实现
     @weakify(self);
-    self.demoView.ln_ActionBlock = ^(id sender, id infor) {
+    self.delegateModel = [[LNTabelDemoDelegateModel alloc] initWithDataArr:self.viewModel.dataSoure tableView:self.tableView cellClassNames:@[@"LNTableDemoCell"] useAutomaticDimension:NO cellDidSelectedBlock:^(NSIndexPath *indexPath, id cellModel) {
+        //cell点击事件,传出相应的下标和对应的模型
+    }];
+    
+    [self.viewModel loadLocalTableDemoData:^{
         @strongify(self);
-        [self.viewModel chageDetail];
-    };
+        [self.tableView reloadData];
+    }];
+    
 }
 
 #pragma mark - lazyload
-
-- (LNDemoView *)demoView{
-    if(!_demoView){
-        _demoView = [LNDemoView ln_loadFromXib];
+- (UITableView *)tableView{
+    if(!_tableView){
+        _tableView = [LNTabelDemoDelegateModel createTableWithStyle:UITableViewStylePlain rigistNibCellNames:@[@"LNTableDemoCell"] rigistClassCellNames:nil];
+        _tableView.tableFooterView = [UIView new];
     }
-    return _demoView;
+    return _tableView;
 }
 - (LNDemoViewModel *)viewModel{
     if(!_viewModel){

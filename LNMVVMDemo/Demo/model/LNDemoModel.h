@@ -13,5 +13,6 @@
 @property (nonatomic,copy)NSString *title;
 @property (nonatomic,copy)NSString *detailStr;
 @property (nonatomic,assign)BOOL isChoose;
+@property (nonatomic,copy)NSString *dateStr;
 
 @end

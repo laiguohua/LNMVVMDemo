@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		142BE0592154BD1100418AE9 /* LNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0582154BD1100418AE9 /* LNRequest.m */; };
-		142BE0642154BDE700418AE9 /* LNParserMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE05A2154BDE500418AE9 /* LNParserMarker.m */; };
-		142BE0652154BDE700418AE9 /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE05D2154BDE500418AE9 /* MBManager.m */; };
-		142BE0662154BDE700418AE9 /* NSObject+parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0612154BDE600418AE9 /* NSObject+parser.m */; };
-		142BE0672154BDE700418AE9 /* LNMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */; };
-		142BE0682154BDE700418AE9 /* NSString+LKCalauteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */; };
-		142BE06D2154BE9E00418AE9 /* LNHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE06B2154BE9E00418AE9 /* LNHttpManager.m */; };
-		142BE06E2154BE9E00418AE9 /* LNHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */; };
-		142BE0712154C06600418AE9 /* LNBaseParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BE0702154C06600418AE9 /* LNBaseParseManager.m */; };
+		144CB422215B53BD002950FA /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB3F9215B53BC002950FA /* MBManager.m */; };
+		144CB423215B53BD002950FA /* LNMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB3FA215B53BC002950FA /* LNMBProgressHUD.m */; };
+		144CB424215B53BD002950FA /* LBaseCollectionDelegateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB400215B53BC002950FA /* LBaseCollectionDelegateModel.m */; };
+		144CB425215B53BD002950FA /* LBaseTableDelegateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB401215B53BC002950FA /* LBaseTableDelegateModel.m */; };
+		144CB426215B53BD002950FA /* LNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB407215B53BC002950FA /* LNRequest.m */; };
+		144CB427215B53BD002950FA /* LNHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB408215B53BC002950FA /* LNHttpConfig.m */; };
+		144CB428215B53BD002950FA /* LNHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB409215B53BC002950FA /* LNHttpManager.m */; };
+		144CB429215B53BD002950FA /* LNNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB40C215B53BC002950FA /* LNNavigationViewController.m */; };
+		144CB42A215B53BD002950FA /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB40D215B53BC002950FA /* LNBaseViewController.m */; };
+		144CB42B215B53BD002950FA /* NSObject+parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB414215B53BC002950FA /* NSObject+parser.m */; };
+		144CB42C215B53BD002950FA /* LNParserMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB415215B53BC002950FA /* LNParserMarker.m */; };
+		144CB42D215B53BD002950FA /* LNBaseParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB416215B53BC002950FA /* LNBaseParseManager.m */; };
+		144CB42E215B53BD002950FA /* LNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB418215B53BC002950FA /* LNBaseView.m */; };
+		144CB42F215B53BD002950FA /* NSString+LKCalauteSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB41C215B53BD002950FA /* NSString+LKCalauteSize.m */; };
+		144CB430215B53BD002950FA /* LNBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB420215B53BD002950FA /* LNBaseViewModel.m */; };
+		144CB434215B5494002950FA /* LNTableDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB432215B5493002950FA /* LNTableDemoCell.m */; };
+		144CB435215B5494002950FA /* LNTableDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144CB433215B5493002950FA /* LNTableDemoCell.xib */; };
+		144CB438215B55F3002950FA /* LNTabelDemoDelegateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB437215B55F3002950FA /* LNTabelDemoDelegateModel.m */; };
 		14E40075214F951700E020FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40074214F951700E020FD /* AppDelegate.m */; };
 		14E4007D214F951E00E020FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007C214F951E00E020FD /* Assets.xcassets */; };
 		14E40080214F951E00E020FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E4007E214F951E00E020FD /* LaunchScreen.storyboard */; };
 		14E40083214F951E00E020FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40082214F951E00E020FD /* main.m */; };
-		14E4008C214F98A600E020FD /* LNBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4008B214F98A600E020FD /* LNBaseView.m */; };
-		14E4008F214F98BA00E020FD /* LNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4008E214F98BA00E020FD /* LNBaseViewController.m */; };
-		14E40092214F98D900E020FD /* LNBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40091214F98D900E020FD /* LNBaseViewModel.m */; };
-		14E40098214F9E4F00E020FD /* LNNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E40097214F9E4F00E020FD /* LNNavigationViewController.m */; };
 		14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A1214F9EF600E020FD /* LNRootViewController.m */; };
 		14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A5214F9F5900E020FD /* LNDemoViewModel.m */; };
 		14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E400A8214F9FA300E020FD /* LNDemoModel.m */; };
@@ -34,25 +39,46 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		142BE0572154BD1000418AE9 /* LNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRequest.h; sourceTree = "<group>"; };
-		142BE0582154BD1100418AE9 /* LNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRequest.m; sourceTree = "<group>"; };
-		142BE05A2154BDE500418AE9 /* LNParserMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNParserMarker.m; sourceTree = "<group>"; };
-		142BE05B2154BDE500418AE9 /* NSString+LKCalauteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LKCalauteSize.h"; sourceTree = "<group>"; };
-		142BE05C2154BDE500418AE9 /* LNMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNMBProgressHUD.h; sourceTree = "<group>"; };
-		142BE05D2154BDE500418AE9 /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
-		142BE05E2154BDE500418AE9 /* MBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBManager.h; sourceTree = "<group>"; };
-		142BE05F2154BDE600418AE9 /* LNParserMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNParserMarker.h; sourceTree = "<group>"; };
-		142BE0602154BDE600418AE9 /* NSObject+parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+parser.h"; sourceTree = "<group>"; };
-		142BE0612154BDE600418AE9 /* NSObject+parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+parser.m"; sourceTree = "<group>"; };
-		142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNMBProgressHUD.m; sourceTree = "<group>"; };
-		142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LKCalauteSize.m"; sourceTree = "<group>"; };
-		142BE0692154BE9D00418AE9 /* LNHttpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpConfig.h; sourceTree = "<group>"; };
-		142BE06A2154BE9E00418AE9 /* LNHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpManager.h; sourceTree = "<group>"; };
-		142BE06B2154BE9E00418AE9 /* LNHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpManager.m; sourceTree = "<group>"; };
-		142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpConfig.m; sourceTree = "<group>"; };
-		142BE06F2154C06500418AE9 /* LNBaseParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseParseManager.h; sourceTree = "<group>"; };
-		142BE0702154C06600418AE9 /* LNBaseParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseParseManager.m; sourceTree = "<group>"; };
-		144CB3F6215B306F002950FA /* LNRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRequestProtocol.h; sourceTree = "<group>"; };
+		144CB3F8215B53BC002950FA /* LNMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNMBProgressHUD.h; sourceTree = "<group>"; };
+		144CB3F9215B53BC002950FA /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
+		144CB3FA215B53BC002950FA /* LNMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNMBProgressHUD.m; sourceTree = "<group>"; };
+		144CB3FB215B53BC002950FA /* MBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBManager.h; sourceTree = "<group>"; };
+		144CB3FD215B53BC002950FA /* LBaseCollectionDelegateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseCollectionDelegateModel.h; sourceTree = "<group>"; };
+		144CB3FE215B53BC002950FA /* LCellConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCellConfigDelegate.h; sourceTree = "<group>"; };
+		144CB3FF215B53BC002950FA /* LBaseTableDelegateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseTableDelegateModel.h; sourceTree = "<group>"; };
+		144CB400215B53BC002950FA /* LBaseCollectionDelegateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBaseCollectionDelegateModel.m; sourceTree = "<group>"; };
+		144CB401215B53BC002950FA /* LBaseTableDelegateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBaseTableDelegateModel.m; sourceTree = "<group>"; };
+		144CB403215B53BC002950FA /* LNRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRequestProtocol.h; sourceTree = "<group>"; };
+		144CB404215B53BC002950FA /* LNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRequest.h; sourceTree = "<group>"; };
+		144CB405215B53BC002950FA /* LNHttpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpConfig.h; sourceTree = "<group>"; };
+		144CB406215B53BC002950FA /* LNHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNHttpManager.h; sourceTree = "<group>"; };
+		144CB407215B53BC002950FA /* LNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRequest.m; sourceTree = "<group>"; };
+		144CB408215B53BC002950FA /* LNHttpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpConfig.m; sourceTree = "<group>"; };
+		144CB409215B53BC002950FA /* LNHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNHttpManager.m; sourceTree = "<group>"; };
+		144CB40B215B53BC002950FA /* LNViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNViewControllerProtocol.h; sourceTree = "<group>"; };
+		144CB40C215B53BC002950FA /* LNNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNNavigationViewController.m; sourceTree = "<group>"; };
+		144CB40D215B53BC002950FA /* LNBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewController.m; sourceTree = "<group>"; };
+		144CB40E215B53BC002950FA /* LNNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNavigationViewController.h; sourceTree = "<group>"; };
+		144CB40F215B53BC002950FA /* LNBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseViewController.h; sourceTree = "<group>"; };
+		144CB411215B53BC002950FA /* NSObject+parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+parser.h"; sourceTree = "<group>"; };
+		144CB412215B53BC002950FA /* LNBaseParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseParseManager.h; sourceTree = "<group>"; };
+		144CB413215B53BC002950FA /* LNParserMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNParserMarker.h; sourceTree = "<group>"; };
+		144CB414215B53BC002950FA /* NSObject+parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+parser.m"; sourceTree = "<group>"; };
+		144CB415215B53BC002950FA /* LNParserMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNParserMarker.m; sourceTree = "<group>"; };
+		144CB416215B53BC002950FA /* LNBaseParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseParseManager.m; sourceTree = "<group>"; };
+		144CB418215B53BC002950FA /* LNBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseView.m; sourceTree = "<group>"; };
+		144CB419215B53BC002950FA /* LNViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNViewProtocol.h; sourceTree = "<group>"; };
+		144CB41A215B53BC002950FA /* LNBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseView.h; sourceTree = "<group>"; };
+		144CB41C215B53BD002950FA /* NSString+LKCalauteSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LKCalauteSize.m"; sourceTree = "<group>"; };
+		144CB41D215B53BD002950FA /* NSString+LKCalauteSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LKCalauteSize.h"; sourceTree = "<group>"; };
+		144CB41F215B53BD002950FA /* LNBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNBaseViewModel.h; sourceTree = "<group>"; };
+		144CB420215B53BD002950FA /* LNBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewModel.m; sourceTree = "<group>"; };
+		144CB421215B53BD002950FA /* LNViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNViewModelProtocol.h; sourceTree = "<group>"; };
+		144CB431215B5493002950FA /* LNTableDemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNTableDemoCell.h; sourceTree = "<group>"; };
+		144CB432215B5493002950FA /* LNTableDemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTableDemoCell.m; sourceTree = "<group>"; };
+		144CB433215B5493002950FA /* LNTableDemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LNTableDemoCell.xib; sourceTree = "<group>"; };
+		144CB436215B55F3002950FA /* LNTabelDemoDelegateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNTabelDemoDelegateModel.h; sourceTree = "<group>"; };
+		144CB437215B55F3002950FA /* LNTabelDemoDelegateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNTabelDemoDelegateModel.m; sourceTree = "<group>"; };
 		14E40070214F951700E020FD /* LNMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E40073214F951700E020FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14E40074214F951700E020FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,17 +86,6 @@
 		14E4007F214F951E00E020FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14E40081214F951E00E020FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E40082214F951E00E020FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14E4008A214F98A600E020FD /* LNBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseView.h; sourceTree = "<group>"; };
-		14E4008B214F98A600E020FD /* LNBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseView.m; sourceTree = "<group>"; };
-		14E4008D214F98BA00E020FD /* LNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewController.h; sourceTree = "<group>"; };
-		14E4008E214F98BA00E020FD /* LNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewController.m; sourceTree = "<group>"; };
-		14E40090214F98D900E020FD /* LNBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNBaseViewModel.h; sourceTree = "<group>"; };
-		14E40091214F98D900E020FD /* LNBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNBaseViewModel.m; sourceTree = "<group>"; };
-		14E40093214F98F800E020FD /* LNViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewProtocol.h; sourceTree = "<group>"; };
-		14E40094214F991000E020FD /* LNViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewControllerProtocol.h; sourceTree = "<group>"; };
-		14E40095214F992700E020FD /* LNViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNViewModelProtocol.h; sourceTree = "<group>"; };
-		14E40096214F9E4F00E020FD /* LNNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNNavigationViewController.h; sourceTree = "<group>"; };
-		14E40097214F9E4F00E020FD /* LNNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNNavigationViewController.m; sourceTree = "<group>"; };
 		14E400A1214F9EF600E020FD /* LNRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRootViewController.m; sourceTree = "<group>"; };
 		14E400A2214F9EF600E020FD /* LNRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRootViewController.h; sourceTree = "<group>"; };
 		14E400A4214F9F5900E020FD /* LNDemoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNDemoViewModel.h; sourceTree = "<group>"; };
@@ -99,6 +114,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144CB3F7215B53BC002950FA /* MB */ = {
+			isa = PBXGroup;
+			children = (
+				144CB3F8215B53BC002950FA /* LNMBProgressHUD.h */,
+				144CB3F9215B53BC002950FA /* MBManager.m */,
+				144CB3FA215B53BC002950FA /* LNMBProgressHUD.m */,
+				144CB3FB215B53BC002950FA /* MBManager.h */,
+			);
+			path = MB;
+			sourceTree = "<group>";
+		};
+		144CB3FC215B53BC002950FA /* LNDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				144CB3FD215B53BC002950FA /* LBaseCollectionDelegateModel.h */,
+				144CB3FE215B53BC002950FA /* LCellConfigDelegate.h */,
+				144CB3FF215B53BC002950FA /* LBaseTableDelegateModel.h */,
+				144CB400215B53BC002950FA /* LBaseCollectionDelegateModel.m */,
+				144CB401215B53BC002950FA /* LBaseTableDelegateModel.m */,
+			);
+			path = LNDataSource;
+			sourceTree = "<group>";
+		};
+		144CB402215B53BC002950FA /* LNHttp */ = {
+			isa = PBXGroup;
+			children = (
+				144CB403215B53BC002950FA /* LNRequestProtocol.h */,
+				144CB404215B53BC002950FA /* LNRequest.h */,
+				144CB405215B53BC002950FA /* LNHttpConfig.h */,
+				144CB406215B53BC002950FA /* LNHttpManager.h */,
+				144CB407215B53BC002950FA /* LNRequest.m */,
+				144CB408215B53BC002950FA /* LNHttpConfig.m */,
+				144CB409215B53BC002950FA /* LNHttpManager.m */,
+			);
+			path = LNHttp;
+			sourceTree = "<group>";
+		};
+		144CB40A215B53BC002950FA /* LNBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				144CB40B215B53BC002950FA /* LNViewControllerProtocol.h */,
+				144CB40C215B53BC002950FA /* LNNavigationViewController.m */,
+				144CB40D215B53BC002950FA /* LNBaseViewController.m */,
+				144CB40E215B53BC002950FA /* LNNavigationViewController.h */,
+				144CB40F215B53BC002950FA /* LNBaseViewController.h */,
+			);
+			path = LNBaseController;
+			sourceTree = "<group>";
+		};
+		144CB410215B53BC002950FA /* LNBaseParser */ = {
+			isa = PBXGroup;
+			children = (
+				144CB411215B53BC002950FA /* NSObject+parser.h */,
+				144CB412215B53BC002950FA /* LNBaseParseManager.h */,
+				144CB413215B53BC002950FA /* LNParserMarker.h */,
+				144CB414215B53BC002950FA /* NSObject+parser.m */,
+				144CB415215B53BC002950FA /* LNParserMarker.m */,
+				144CB416215B53BC002950FA /* LNBaseParseManager.m */,
+			);
+			path = LNBaseParser;
+			sourceTree = "<group>";
+		};
+		144CB417215B53BC002950FA /* LNBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				144CB418215B53BC002950FA /* LNBaseView.m */,
+				144CB419215B53BC002950FA /* LNViewProtocol.h */,
+				144CB41A215B53BC002950FA /* LNBaseView.h */,
+			);
+			path = LNBaseView;
+			sourceTree = "<group>";
+		};
+		144CB41B215B53BD002950FA /* LNTool */ = {
+			isa = PBXGroup;
+			children = (
+				144CB41C215B53BD002950FA /* NSString+LKCalauteSize.m */,
+				144CB41D215B53BD002950FA /* NSString+LKCalauteSize.h */,
+			);
+			path = LNTool;
+			sourceTree = "<group>";
+		};
+		144CB41E215B53BD002950FA /* LNBaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				144CB41F215B53BD002950FA /* LNBaseViewModel.h */,
+				144CB420215B53BD002950FA /* LNBaseViewModel.m */,
+				144CB421215B53BD002950FA /* LNViewModelProtocol.h */,
+			);
+			path = LNBaseViewModel;
+			sourceTree = "<group>";
+		};
 		14E40067214F951700E020FD = {
 			isa = PBXGroup;
 			children = (
@@ -135,36 +241,14 @@
 		14E40089214F957E00E020FD /* LNBase */ = {
 			isa = PBXGroup;
 			children = (
-				142BE06F2154C06500418AE9 /* LNBaseParseManager.h */,
-				142BE0702154C06600418AE9 /* LNBaseParseManager.m */,
-				142BE0692154BE9D00418AE9 /* LNHttpConfig.h */,
-				142BE06C2154BE9E00418AE9 /* LNHttpConfig.m */,
-				142BE06A2154BE9E00418AE9 /* LNHttpManager.h */,
-				142BE06B2154BE9E00418AE9 /* LNHttpManager.m */,
-				142BE05C2154BDE500418AE9 /* LNMBProgressHUD.h */,
-				142BE0622154BDE600418AE9 /* LNMBProgressHUD.m */,
-				142BE05F2154BDE600418AE9 /* LNParserMarker.h */,
-				142BE05A2154BDE500418AE9 /* LNParserMarker.m */,
-				142BE05E2154BDE500418AE9 /* MBManager.h */,
-				142BE05D2154BDE500418AE9 /* MBManager.m */,
-				142BE0602154BDE600418AE9 /* NSObject+parser.h */,
-				142BE0612154BDE600418AE9 /* NSObject+parser.m */,
-				142BE05B2154BDE500418AE9 /* NSString+LKCalauteSize.h */,
-				142BE0632154BDE700418AE9 /* NSString+LKCalauteSize.m */,
-				142BE0572154BD1000418AE9 /* LNRequest.h */,
-				142BE0582154BD1100418AE9 /* LNRequest.m */,
-				144CB3F6215B306F002950FA /* LNRequestProtocol.h */,
-				14E4008A214F98A600E020FD /* LNBaseView.h */,
-				14E4008B214F98A600E020FD /* LNBaseView.m */,
-				14E40093214F98F800E020FD /* LNViewProtocol.h */,
-				14E4008D214F98BA00E020FD /* LNBaseViewController.h */,
-				14E4008E214F98BA00E020FD /* LNBaseViewController.m */,
-				14E40094214F991000E020FD /* LNViewControllerProtocol.h */,
-				14E40090214F98D900E020FD /* LNBaseViewModel.h */,
-				14E40091214F98D900E020FD /* LNBaseViewModel.m */,
-				14E40095214F992700E020FD /* LNViewModelProtocol.h */,
-				14E40096214F9E4F00E020FD /* LNNavigationViewController.h */,
-				14E40097214F9E4F00E020FD /* LNNavigationViewController.m */,
+				144CB40A215B53BC002950FA /* LNBaseController */,
+				144CB410215B53BC002950FA /* LNBaseParser */,
+				144CB417215B53BC002950FA /* LNBaseView */,
+				144CB41E215B53BD002950FA /* LNBaseViewModel */,
+				144CB3FC215B53BC002950FA /* LNDataSource */,
+				144CB402215B53BC002950FA /* LNHttp */,
+				144CB41B215B53BD002950FA /* LNTool */,
+				144CB3F7215B53BC002950FA /* MB */,
 			);
 			path = LNBase;
 			sourceTree = "<group>";
@@ -194,6 +278,8 @@
 			children = (
 				14E400A7214F9FA300E020FD /* LNDemoModel.h */,
 				14E400A8214F9FA300E020FD /* LNDemoModel.m */,
+				144CB436215B55F3002950FA /* LNTabelDemoDelegateModel.h */,
+				144CB437215B55F3002950FA /* LNTabelDemoDelegateModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -204,6 +290,9 @@
 				14E400AC214F9FEC00E020FD /* LNDemoView.h */,
 				14E400AD214F9FEC00E020FD /* LNDemoView.m */,
 				14E400AA214F9FC700E020FD /* LNDemoView.xib */,
+				144CB431215B5493002950FA /* LNTableDemoCell.h */,
+				144CB432215B5493002950FA /* LNTableDemoCell.m */,
+				144CB433215B5493002950FA /* LNTableDemoCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -299,6 +388,7 @@
 				14E40080214F951E00E020FD /* LaunchScreen.storyboard in Resources */,
 				14E400AB214F9FC700E020FD /* LNDemoView.xib in Resources */,
 				14E4007D214F951E00E020FD /* Assets.xcassets in Resources */,
+				144CB435215B5494002950FA /* LNTableDemoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +409,7 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -329,6 +420,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -360,26 +452,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142BE06E2154BE9E00418AE9 /* LNHttpConfig.m in Sources */,
-				142BE0652154BDE700418AE9 /* MBManager.m in Sources */,
+				144CB438215B55F3002950FA /* LNTabelDemoDelegateModel.m in Sources */,
+				144CB425215B53BD002950FA /* LBaseTableDelegateModel.m in Sources */,
+				144CB422215B53BD002950FA /* MBManager.m in Sources */,
+				144CB42B215B53BD002950FA /* NSObject+parser.m in Sources */,
+				144CB42D215B53BD002950FA /* LNBaseParseManager.m in Sources */,
+				144CB429215B53BD002950FA /* LNNavigationViewController.m in Sources */,
 				14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */,
-				142BE0642154BDE700418AE9 /* LNParserMarker.m in Sources */,
-				14E4008C214F98A600E020FD /* LNBaseView.m in Sources */,
-				142BE0662154BDE700418AE9 /* NSObject+parser.m in Sources */,
-				142BE0682154BDE700418AE9 /* NSString+LKCalauteSize.m in Sources */,
-				14E4008F214F98BA00E020FD /* LNBaseViewController.m in Sources */,
-				14E40098214F9E4F00E020FD /* LNNavigationViewController.m in Sources */,
+				144CB424215B53BD002950FA /* LBaseCollectionDelegateModel.m in Sources */,
+				144CB42F215B53BD002950FA /* NSString+LKCalauteSize.m in Sources */,
+				144CB434215B5494002950FA /* LNTableDemoCell.m in Sources */,
+				144CB42E215B53BD002950FA /* LNBaseView.m in Sources */,
+				144CB42A215B53BD002950FA /* LNBaseViewController.m in Sources */,
 				14E40083214F951E00E020FD /* main.m in Sources */,
+				144CB42C215B53BD002950FA /* LNParserMarker.m in Sources */,
+				144CB428215B53BD002950FA /* LNHttpManager.m in Sources */,
+				144CB430215B53BD002950FA /* LNBaseViewModel.m in Sources */,
 				14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */,
-				14E40092214F98D900E020FD /* LNBaseViewModel.m in Sources */,
+				144CB427215B53BD002950FA /* LNHttpConfig.m in Sources */,
 				14E40075214F951700E020FD /* AppDelegate.m in Sources */,
-				142BE0672154BDE700418AE9 /* LNMBProgressHUD.m in Sources */,
-				142BE06D2154BE9E00418AE9 /* LNHttpManager.m in Sources */,
 				14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */,
-				142BE0592154BD1100418AE9 /* LNRequest.m in Sources */,
+				144CB423215B53BD002950FA /* LNMBProgressHUD.m in Sources */,
+				144CB426215B53BD002950FA /* LNRequest.m in Sources */,
 				14E400AE214F9FEC00E020FD /* LNDemoView.m in Sources */,
 				14E400B1214FB6B800E020FD /* LNTestDemoViewController.m in Sources */,
-				142BE0712154C06600418AE9 /* LNBaseParseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
