@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14389BB3215F1593004A286F /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14389BB1215F1593004A286F /* YYFPSLabel.m */; };
+		14389BB6215F6C47004A286F /* LNKVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14389BB5215F6C47004A286F /* LNKVCDemoViewController.m */; };
+		14389BB9215F6D06004A286F /* LNKVCDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14389BB8215F6D06004A286F /* LNKVCDemoModel.m */; };
 		144CB422215B53BD002950FA /* MBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB3F9215B53BC002950FA /* MBManager.m */; };
 		144CB423215B53BD002950FA /* LNMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB3FA215B53BC002950FA /* LNMBProgressHUD.m */; };
 		144CB424215B53BD002950FA /* LBaseCollectionDelegateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CB400215B53BC002950FA /* LBaseCollectionDelegateModel.m */; };
@@ -39,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14389BB1215F1593004A286F /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		14389BB2215F1593004A286F /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		14389BB4215F6C47004A286F /* LNKVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNKVCDemoViewController.h; sourceTree = "<group>"; };
+		14389BB5215F6C47004A286F /* LNKVCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNKVCDemoViewController.m; sourceTree = "<group>"; };
+		14389BB7215F6D06004A286F /* LNKVCDemoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNKVCDemoModel.h; sourceTree = "<group>"; };
+		14389BB8215F6D06004A286F /* LNKVCDemoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNKVCDemoModel.m; sourceTree = "<group>"; };
 		144CB3F8215B53BC002950FA /* LNMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNMBProgressHUD.h; sourceTree = "<group>"; };
 		144CB3F9215B53BC002950FA /* MBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBManager.m; sourceTree = "<group>"; };
 		144CB3FA215B53BC002950FA /* LNMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNMBProgressHUD.m; sourceTree = "<group>"; };
@@ -280,6 +289,10 @@
 				14E400A8214F9FA300E020FD /* LNDemoModel.m */,
 				144CB436215B55F3002950FA /* LNTabelDemoDelegateModel.h */,
 				144CB437215B55F3002950FA /* LNTabelDemoDelegateModel.m */,
+				14389BB2215F1593004A286F /* YYFPSLabel.h */,
+				14389BB1215F1593004A286F /* YYFPSLabel.m */,
+				14389BB7215F6D06004A286F /* LNKVCDemoModel.h */,
+				14389BB8215F6D06004A286F /* LNKVCDemoModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -304,6 +317,8 @@
 				14E400A1214F9EF600E020FD /* LNRootViewController.m */,
 				14E400AF214FB6B800E020FD /* LNTestDemoViewController.h */,
 				14E400B0214FB6B800E020FD /* LNTestDemoViewController.m */,
+				14389BB4215F6C47004A286F /* LNKVCDemoViewController.h */,
+				14389BB5215F6C47004A286F /* LNKVCDemoViewController.m */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -403,6 +418,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LNMVVMDemo/Pods-LNMVVMDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/KYBarrageKit/KYBarrageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
@@ -410,10 +426,12 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYBarrageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
@@ -421,6 +439,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -455,9 +474,11 @@
 				144CB438215B55F3002950FA /* LNTabelDemoDelegateModel.m in Sources */,
 				144CB425215B53BD002950FA /* LBaseTableDelegateModel.m in Sources */,
 				144CB422215B53BD002950FA /* MBManager.m in Sources */,
+				14389BB9215F6D06004A286F /* LNKVCDemoModel.m in Sources */,
 				144CB42B215B53BD002950FA /* NSObject+parser.m in Sources */,
 				144CB42D215B53BD002950FA /* LNBaseParseManager.m in Sources */,
 				144CB429215B53BD002950FA /* LNNavigationViewController.m in Sources */,
+				14389BB3215F1593004A286F /* YYFPSLabel.m in Sources */,
 				14E400A9214F9FA300E020FD /* LNDemoModel.m in Sources */,
 				144CB424215B53BD002950FA /* LBaseCollectionDelegateModel.m in Sources */,
 				144CB42F215B53BD002950FA /* NSString+LKCalauteSize.m in Sources */,
@@ -471,6 +492,7 @@
 				14E400A3214F9EF700E020FD /* LNRootViewController.m in Sources */,
 				144CB427215B53BD002950FA /* LNHttpConfig.m in Sources */,
 				14E40075214F951700E020FD /* AppDelegate.m in Sources */,
+				14389BB6215F6C47004A286F /* LNKVCDemoViewController.m in Sources */,
 				14E400A6214F9F5900E020FD /* LNDemoViewModel.m in Sources */,
 				144CB423215B53BD002950FA /* LNMBProgressHUD.m in Sources */,
 				144CB426215B53BD002950FA /* LNRequest.m in Sources */,

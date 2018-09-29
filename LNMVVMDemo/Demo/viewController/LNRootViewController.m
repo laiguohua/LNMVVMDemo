@@ -13,6 +13,7 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #import "LNTestDemoViewController.h"
+#import "LNKVCDemoViewController.h"
 
 @interface LNRootViewController ()
 
@@ -41,8 +42,11 @@
     [_demoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    UIBarButtonItem *demoItem = [[UIBarButtonItem alloc] initWithTitle:@"TableViewDemo" style:UIBarButtonItemStylePlain target:self action:@selector(demoAction)];
+    UIBarButtonItem *demoItem = [[UIBarButtonItem alloc] initWithTitle:@"Table" style:UIBarButtonItemStylePlain target:self action:@selector(demoAction)];
     demoItem.tintColor = [UIColor blackColor];
+    UIBarButtonItem *kvcItem = [[UIBarButtonItem alloc] initWithTitle:@"KVC" style:UIBarButtonItemStylePlain target:self action:@selector(kvcDemoAction)];
+    kvcItem.tintColor = [UIColor blackColor];
+//    self.navigationItem.rightBarButtonItems = @[demoItem,kvcItem];
     self.navigationItem.rightBarButtonItem = demoItem;
     
 }
@@ -59,7 +63,10 @@
     LNTestDemoViewController *demoVC = [LNTestDemoViewController new];
     [self.navigationController pushViewController:demoVC animated:YES];
 }
-
+- (void)kvcDemoAction{
+    LNKVCDemoViewController *kvcDemoVC = [LNKVCDemoViewController new];
+    [self.navigationController pushViewController:kvcDemoVC animated:YES];
+}
 #pragma mark - lazyload
 
 - (LNDemoView *)demoView{

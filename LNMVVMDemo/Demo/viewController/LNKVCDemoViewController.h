@@ -1,0 +1,13 @@
+//
+//  LNKVCDemoViewController.h
+//  LNMVVMDemo
+//
+//  Created by Mr.lai on 2018/9/29.
+//  Copyright © 2018年 Mr.lai. All rights reserved.
+//
+
+#import "LNBaseViewController.h"
+
+@interface LNKVCDemoViewController : LNBaseViewController
+
+@end
